@@ -6,6 +6,11 @@ body {
   background: #fff;
 }
 
+a {
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: none;
+}
+
 /* Переиспользуемый оверлей (обложка и карточки) */
 .overlay {
   position: absolute;
@@ -51,13 +56,12 @@ body {
 
 .header__logo {
   display: block;
-  width: 148px;
 }
 
 .header__logo-image {
   display: block;
-  width: 148px;
-  height: auto;
+  width: auto;
+  height: 105px;
 }
 
 .header__address {
@@ -131,7 +135,7 @@ body {
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 10px; /* подберите по макету (ширина текста ≈ 637px) */
+  word-spacing: 18.7px; /* подогнано под макет: ширина текста ≈ 633px */
 }
 
 .bet-button {
@@ -226,7 +230,7 @@ body {
 
 .lots__look-more-link {
   display: inline-block;
-  margin: 28px 0 0 40px;
+  margin: 33px 0 0 40px;
   font-size: 20px;
   line-height: 23px;
 }
@@ -236,7 +240,7 @@ body {
   display: grid;
   grid-template-columns: 334px 1fr; /* левая колонка = ширина карточки */
   column-gap: 25px;
-  margin-top: 120px;
+  margin-top: 115px;
   padding: 0 24px;
 }
 
@@ -254,6 +258,10 @@ body {
 .about__logo-image {
   width: 148px;
   height: auto;
+}
+
+.about__column:last-child {
+  padding-top: 136px;
 }
 
 .about__title {
@@ -274,7 +282,12 @@ body {
   grid-template-columns: 1fr min-content 1fr;
   align-items: start;
   margin-top: 180px;
-  padding: 0 50px 82px;
+  padding: 0 50px 84px;
+}
+
+.footer__menu,
+.footer__social-list {
+  margin-top: 1px;
 }
 
 .footer__menu-list {
